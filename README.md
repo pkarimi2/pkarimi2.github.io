@@ -1,62 +1,82 @@
+# Pouyan Karimi's Portfolio Template
 
-# FEM-Based Electrostatics Solver
+This repository contains the source code for my personal portfolio website, hosted via GitHub Pages.  
+It is a simple, customizable static website showcasing professional experience, academic work, and selected projects.
 
-A lightweight Python implementation of a 2D electrostatics solver using the Finite Element Method (FEM). The solver handles Dirichlet boundary conditions and solves the Poisson equation with spatially varying permittivity. Visualization is supported via `matplotlib` and `pyvista`.
+You can use this repository as a **template** for your own portfolio.
 
-## Features
+## 🔗 Live Demo
 
-- FEM formulation for 2D Poisson’s equation: ∇·(ε∇V) = -ρ
-- Support for spatially varying permittivity (ε)
-- Arbitrary charge distribution (ρ)
-- Dirichlet boundary conditions on arbitrary nodes
-- Mesh generation via `meshzoo`
-- Visualization of potential and electric field using `matplotlib` and `pyvista`
+Visit the site here: [https://pkarimi2.github.io](https://pkarimi2.github.io)
 
-## Installation
+---
 
-Ensure you have Python 3.8+ and install dependencies:
+## 🧰 Technologies Used
 
-```bash
-pip install numpy matplotlib scipy meshzoo pyvista
-```
+- HTML5 / CSS3
+- GitHub Pages (for hosting)
+- Optional: JavaScript (for interactivity)
 
-## Usage
+No frameworks or static site generators are required — just plain, editable files.
 
-Run the main script:
+---
 
-```bash
-python fem_electrostatics.py
-```
-
-The solver will:
-- Create a unit square mesh
-- Apply Dirichlet boundary conditions
-- Assemble and solve the FEM system
-- Plot the potential and electric field
-
-## File Structure
+## 📁 Folder Structure
 
 ```
-├── fem_electrostatics.py     # Main solver script
-├── README.md                 # This file
+pkarimi2.github.io/
+│
+├── index.html           # Main homepage
+├── about.html           # About or bio page (if used)
+├── projects.html        # List of selected work or publications
+├── contact.html         # Contact form or contact info
+├── style.css            # Site-wide CSS styles
+├── assets/              # Folder for images, CV PDFs, etc.
+└── README.md            # This file
 ```
 
-## Implementation Highlights
+---
 
-- Linear triangular elements for 2D domain discretization
-- Element stiffness matrix computed using constant gradients (linear shape functions)
-- Global matrix assembly with boundary condition enforcement
-- Electric field computed as negative gradient of potential
+## 🚀 Getting Started
 
-## Visualization
+To use this portfolio as a template:
 
-Electric potential is visualized using `matplotlib`. Electric field vectors are visualized with `pyvista` in 3D-like perspective.
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/pkarimi2/pkarimi2.github.io.git
+   ```
 
-## Example Output
+2. **Customize content:**
+   - Edit `index.html`, `projects.html`, etc. using any code editor
+   - Replace content and links with your own information
+   - Add images or PDFs to the `assets/` folder
 
-- 2D contour plot of electric potential
-- Vector field plot of electric field
+3. **Preview locally:**
+   - Open `index.html` in your browser
 
-## License
+4. **Publish your version:**
+   - Push changes to your GitHub repo
+   - GitHub Pages will automatically host it at `https://<your-username>.github.io`
 
-MIT License. See `LICENSE` for details.
+---
+
+## ✏️ Customization Tips
+
+- Modify colors and fonts via `style.css`
+- Add new sections by duplicating and modifying `.html` files
+- You can link your CV, GitHub, or LinkedIn directly from the homepage
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — feel free to use, modify, and share.
+
+---
+
+## 👤 Author
+
+**Pouyan Karimi**  
+Ph.D. in Engineering Mechanics  
+[Portfolio](https://pkarimi2.github.io) | [LinkedIn](https://linkedin.com/in/pkarimi2)
+
