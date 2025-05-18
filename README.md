@@ -1,9 +1,8 @@
-
 # Pouyan Karimi's Personal Portfolio
 
 This repository contains the source code for my personal academic, research, and software engineering portfolio, hosted via GitHub Pages.
 
-It is a clean, customizable static website showcasing my professional experience, software engineering projects, research work, publications, teaching, honors, and media features.
+It is a clean, customizable static website showcasing my professional experience, engineering projects, software tools, research publications, teaching experience, honors, and media features.
 
 ---
 
@@ -20,7 +19,7 @@ It is a clean, customizable static website showcasing my professional experience
 - GitHub Pages (for hosting)  
 - Font Awesome (for icons)
 
-No frameworks or static site generators required — just plain, editable files.
+No frameworks or static site generators — just plain, editable files.
 
 ---
 
@@ -29,56 +28,56 @@ No frameworks or static site generators required — just plain, editable files.
 ```
 pkarimi2.github.io/
 │
-├── index.html           # Main portfolio (landing page)
-├── projects.html        # Research projects
-├── swe-projects.html    # Software engineering projects (interactive games, apps)
-├── teaching.html        # Courses taught
-├── publications.html    # Published academic papers
-├── honors.html          # Awards and recognitions
-├── news.html            # Media and news mentions
-├── contact.html         # Contact form or info
+├── index.html            # Main landing page
+├── projects.html         # Engineering (computational/modeling) projects
+├── swe-projects.html     # Software engineering projects (e.g., games, apps)
+├── teaching.html         # Teaching and course instruction
+├── publications.html     # Peer-reviewed publications
+├── honors.html           # Fellowships, research awards
+├── news.html             # News/media features
+├── contact.html          # Contact page
 │
 ├── assets/
 │   ├── css/
-│   │   └── main.css      # Main stylesheet
+│   │   └── main.css      # Stylesheet
 │   ├── js/
-│   │   └── main.js       # JS effects and scrolling
-│   └── images/           # Icons, visuals
-├── images/              # Project and SWE thumbnails
-└── README.md
+│   │   └── main.js       # Scroll and UI scripts
+│   └── images/           # Icons, backgrounds
+├── images/               # Project figures and screenshots
+├── README.md
 ```
 
 ---
 
 ## 📘 Site Structure Overview
 
-| Section        | Page / Anchor         | Description                                                            |
-|----------------|------------------------|------------------------------------------------------------------------|
-| Home           | `#home`                | Intro and academic overview                                            |
-| Projects       | `#projects`            | Research and academic projects                                         |
-| SWE Projects   | `swe-projects.html`    | Software engineering work like the Connect Four game                  |
-| Teaching       | `#teaching`            | Courses taught and educational experience                              |
-| Publications   | `#publications`        | Academic publications                                                  |
-| Honors         | `#honors`              | Fellowships, scholarships, and honors                                  |
-| News           | `#news`                | Media features, interviews, and academic news                          |
-| Contact        | `contact.html`         | Direct contact form or email info                                      |
+| Section           | Page / Anchor         | Description                                                             |
+|-------------------|------------------------|-------------------------------------------------------------------------|
+| Home              | `index.html`           | Academic/professional intro                                             |
+| Engineering Projects | `projects.html`     | Computational modeling and simulation projects                          |
+| Software Projects | `swe-projects.html`    | Web and software development projects (e.g., Connect Four game)         |
+| Teaching          | `teaching.html`        | University courses taught                                               |
+| Publications      | `publications.html`    | Scientific papers and journal articles                                  |
+| Honors            | `honors.html`          | Awards, fellowships, recognitions                                       |
+| News              | `news.html`            | Media, interviews, presentations                                        |
+| Contact           | `contact.html`         | Contact form and academic email                                         |
 
 ---
 
 ## 🚀 How to Edit or Extend
 
-1. **Edit content:**
-   - Update `.html` files with your own information, media, and links.
-   - Replace project thumbnails and images in the `images/` folder.
+1. **Update content:**
+   - Modify `.html` files with your information and figures.
+   - Replace images or visual media in the `images/` directory.
 
 2. **Preview locally:**
-   - Open `index.html` in your browser.
+   - Open `index.html` in any browser.
 
-3. **Push updates to GitHub:**
+3. **Push to GitHub:**
    ```bash
    git add .
-   git commit -m "Update portfolio content"
-   git push origin master
+   git commit -m "Updated portfolio sections"
+   git push origin main
    ```
 
 4. **View live:**
@@ -88,27 +87,26 @@ pkarimi2.github.io/
 
 ---
 
-## ✏️ Personalization Notes
+## ✏️ Customization Notes
 
-- Use `swe-projects.html` to highlight SWE work like:
-  - Connect Four (JavaScript, OOP)
-  - Future web tools, scripts, or apps
-- Add new `<article>` blocks to each section as needed
+- Use consistent navbar layout across all pages (black with orange links).
+- Section headers like **Engineering Projects** and **Software Projects** are standardized.
+- Responsive layout with uniform spacing and clean code structure.
 
 ---
 
 ## ✅ Features
 
-- Clean and minimalist design  
-- Mobile responsive  
-- No dependencies — fast and lightweight  
-- Fully hosted on GitHub Pages  
+- Clean, mobile-friendly layout  
+- Fully static — no backend or frameworks  
+- GitHub Pages hosting  
+- Easy to maintain and expand  
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — you are free to use and modify it personally or professionally.
+This project is licensed under the **MIT License** — use and modify freely for academic, professional, or personal use.
 
 ---
 
@@ -117,5 +115,5 @@ This project is licensed under the **MIT License** — you are free to use and m
 **Pouyan Karimi**  
 Ph.D. in Engineering Mechanics  
 M.S. in Electrical and Computer Engineering  
-University of Illinois, Urbana  
+University of Illinois Urbana-Champaign  
 🔗 [Portfolio](https://pkarimi2.github.io) | [LinkedIn](https://linkedin.com/in/pkarimi2)

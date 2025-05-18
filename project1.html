@@ -1,167 +1,141 @@
 <!DOCTYPE HTML>
-<!-- this is how it shows the comment!-->
 <html>
-	<head>
-		<title>Pouyan Karimi Portfolio</title>
-		<link rel=" icon" href="images/pori.jpg" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-							
-			body{
-				font-family:Arial, Helvetica, sans-serif
+  <head>
+    <title>Pouyan Karimi Portfolio</title>
+    <link rel="icon" href="images/pori.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-			}
-			p {
-  					text-align: justify;
-  					text-justify: inter-word;
-			}
+      p {
+        text-align: justify;
+        text-justify: inter-word;
+      }
 
-			.row {
-				display: flex;
-				flex-wrap: wrap;
-				padding: 100 200 100px;
-			}
+      nav {
+        background-color: #000000 !important;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-				
-			.column {
-				flex: 100%;
-				padding: 100 px;
-			}
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
 
-			.column img {
-				margin-bottom: 80px;
-				margin-right: 5px;
-				vertical-align: middle;
-			}
-			
-		</style>
-	</head>
-	
-	<body class="" style="background-image: url(images/code.jpg); background-size: 100% ;">
+      nav ul li {
+        margin: 0 20px;
+        display: inline-block;
+      }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      nav ul li a {
+        color: orange;
+        font-size: 20px;
+        text-decoration: none;
+      }
 
-				<!-- Header -->
-					<header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px; ">
-					
-						
-					</header>
+      nav ul li a.active {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body style="background-image: url(images/code.jpg); background-size: 100%;">
+    <div id="wrapper">
+      <header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px;"></header>
 
-				<!-- Nav -->
-				<nav id="nav" style="background-color: black; color: orange; height: 100px; ">
-				
-						
-					<ul>
-						<li><a href="index.html" >Home</a></li>
-						<li><a href="projects.html" >Projects</a></li>
-						<li><a href="teaching.html">Teaching</a></li>
-						<li><a href="publications.html">Publications</a></li>
-						<li><a href="honors.html" >Honors</a></li>
-						<li><a href="news.html" >News</a></li>
-						<li><a href="contact.html"> Contact</a></li>
-					
-					</ul>
-				</nav>
-				
-				<!-- Main -->
-					<div id="main">
-						<!-- projects -->
-						<section  class="main special" style="  text-align: justify; ">
+      <!-- Navigation Bar -->
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Engineering Projects</a></li>
+          <li><a href="swe-projects.html">Software Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="honors.html">Honors</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-							<a href="projects.html" class="button" style=" font-size: 1.5rem; font-weight: bold; background-color: greenyellow;  border: solid 4px black; float: right;">
-							    Back to all projects</a>
-							<h2 style="border-bottom: solid red; text-align:left; margin-top: 3rem;"><strong style="font-weight: bold;"> Modeling of Electrical Properties of Nanocomposites </strong></h2>
+      <!-- Main Content -->
+      <div id="main">
+        <section class="main special" style="text-align: justify;">
+          <a href="projects.html" class="button" style="font-size: 1.5rem; font-weight: bold; background-color: greenyellow; border: 4px solid black; float: right;">
+            Back to Engineering Projects
+          </a>
 
-								 
-							
-							
-										
-							
-								
-							<p style="color: black;">The goal of this project is to develop reliable computational algorithms to accurately predict
-									the electrical properties of polymer nanocomposites. The algorithm would optimize and guide the experimental efforts in finding an efficient 
-									and cost-effective nanocomposites for electrical applications. Such a study is needed to assess the effect of a wide variety of parameters that impact the thermal, mechanical and electrical properties of polymer nanocomposites. 
-									In addition, shielding effectiveness of carbon fiber composites was modeled for several configurations of inclusions. This was done using high-performance computational resources provided by Computational Science and Engineering (CSE) 
-									program at the University of Illinois with our in-house code. Several three dimensional random realizations of different nanofillers for several volume fractions will be generated considering a shell around fillers to model interaction 
-									of host matrix and the fillers. The random distribution of fillers is generated using the random sequential addition (RSA) method
-									The project was funded by the Private Sector Program and the Blue Waters sustained-petascale computing project at the National Center for Supercomputing Applications (NCSA).
-									
-							
+          <h2 style="border-bottom: solid red; text-align: left; margin-top: 3rem;"><strong>Modeling of Electrical Properties of Nanocomposites</strong></h2>
 
-							
+          <p style="color: black;">
+            The goal of this project is to develop reliable computational algorithms to accurately predict the electrical properties of polymer nanocomposites. The algorithm would optimize and guide the experimental efforts in finding an efficient and cost-effective nanocomposites for electrical applications. Such a study is needed to assess the effect of a wide variety of parameters that impact the thermal, mechanical and electrical properties of polymer nanocomposites.
+          </p>
 
-							<div class="row" style="margin: auto; color: black;text-align: center; ">
-								<article class="col"  style="float: left; padding: 30px;  margin: 0px 20px 20px 0px; width: calc(50% - 10px); ">
-									<a href="images/hybrid1.gif" class="image fit thumb" ><img src="images/hybrid1.gif" alt=""   /></a>
-									<h3>Realization of prolate ellipsoids</h3>
-									
-								</article>
+          <p style="color: black;">
+            In addition, shielding effectiveness of carbon fiber composites was modeled for several configurations of inclusions. This was done using high-performance computational resources provided by the Computational Science and Engineering (CSE) program at the University of Illinois with our in-house code. Several three dimensional random realizations of different nanofillers for several volume fractions were generated considering a shell around fillers to model interaction of host matrix and the fillers. The random distribution of fillers is generated using the random sequential addition (RSA) method. The project was funded by the Private Sector Program and the Blue Waters sustained-petascale computing project at the National Center for Supercomputing Applications (NCSA).
+          </p>
 
-								<article class="col" style="padding: 30px;  margin: 0px 0px 20px 0px; width: calc(50% - 10px); ">
-									<a href="images/hybrid.gif" class="image fit thumb"><img src="images/hybrid.gif" alt=""  /></a>
-									<h3 style="color: black; ">Realization of oblate ellipsoids</h3>
-									
+          <div class="row" style="margin: auto; color: black; text-align: center;">
+            <article class="col" style="float: left; padding: 30px; margin: 0 20px 20px 0; width: calc(50% - 10px);">
+              <a href="images/hybrid1.gif" class="image fit thumb"><img src="images/hybrid1.gif" alt="Prolate ellipsoids" /></a>
+              <h3 style="margin: 0.5rem 0;">Realization of prolate ellipsoids</h3>
+            </article>
 
-							</div>
+            <article class="col" style="padding: 30px; margin: 0 0 20px 0; width: calc(50% - 10px);">
+              <a href="images/hybrid.gif" class="image fit thumb"><img src="images/hybrid.gif" alt="Oblate ellipsoids" /></a>
+              <h3 style="color: black; margin: 0.5rem 0;">Realization of oblate ellipsoids</h3>
+            </article>
+          </div>
 
+          <div class="column" style="margin: 0.5rem auto; text-align: center;">
+            <article class="col-6 col-12-xsmall work-item">
+              <a href="images/inside2.gif"><img src="images/inside2.gif" width="35%" style="margin: 0;" /></a>
+              <h3 style="color: black; margin: 0.5rem 0 3.5rem 0;">Camera inside of realization of prolate ellipsoids</h3>
+            </article>
+          </div>
 
-							<div class="column" style="margin: 0; text-align: center; ">
-								<article class="col-6 col-12-xsmall work-item"  >
-									<a href="images/inside2.gif" class="" ><img src="images/inside2.gif" width="35%" style="margin: 0px;"/></a><br><br>
-									<h3 style="color: black;">Camera inside of realization of prolate ellipsoids  </h3>
-									
-								</article>
+          <div class="column" style="margin: 0.5rem auto; text-align: center;">
+            <article class="col-6 col-12-xsmall work-item">
+              <a href="images/fdtd3.gif"><img src="images/fdtd3.gif" width="59%" style="margin: 0;" /></a>
+              <h3 style="color: black; margin: 0.5rem 0 3.5rem 0;">Solving Maxwell's equations using Yee’s Algorithm</h3>
+            </article>
+          </div>
 
-							</div><br><br>
+          <h3 style="color: black; margin: 1rem 0 0.5rem 0;">References</h3>
+          <ul style="color: black;">
+            <li>P. Karimi, A. Amiri-Hezaveh, M. Ostoja-Starzewski, and J.-M. Jin. <a href="https://aip.scitation.org/doi/10.1063/1.5000045" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Electromagnetic characteristics of systems of prolate and oblate ellipsoids</a>. <em>Journal of Applied Physics</em>, 2017. (Featured article on the cover page)</li>
+            <li>P. Karimi, M. Ostoja-Starzewski, and I. Jasiuk. <a href="https://aip.scitation.org/doi/abs/10.1063/1.4964691?journalCode=jap" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Experimental and computational study of shielding effectiveness of polycarbonate carbon nanocomposites</a>. <em>Journal of Applied Physics</em>, 2016.</li>
+          </ul>
+        </section>
+      </div>
 
-							<div class="column" style="text-align: center; ">
-								<article class="col-6 col-12-xsmall work-item"  >
-									<a href="images/fdtd3.gif" class="" ><img src="images/fdtd3.gif" width="59%" style="margin: 0px;" /></a><br>
-									<h3 style="color: black;">Solving Maxwell's equations using Yee’s Algorithm</h3>
-									
-								</article>
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">&copy; All rights reserved.</p>
+      </footer>
+    </div>
 
-							</div>
-
-
-
-							<br><br>
-							<h3 style="color: black;">References</h3>
-							<ul style="color: black;">
-								
-								
-								<li>P. Karimi, A. Amiri-Hezaveh, M. Ostoja-Starzewski, and J.-M. Jin. <a href="https://aip.scitation.org/doi/10.1063/1.5000045" target="_blank" rel="noopener noreferrer"style="color: #0000FF">Electromagnetic characteristics of systems of prolate and oblate ellipsoids</a>.<em> Journal of Applied Physics</em>, 2017. (Featured article on the cover page)</li>
-								<li>P. Karimi, M. Ostoja-Starzewski, and I. Jasiuk. <a href="https://aip.scitation.org/doi/abs/10.1063/1.4964691?journalCode=jap" target="_blank" rel="noopener noreferrer"style="color: #0000FF">Experimental and computational study of shielding eﬀectiveness of polycarbonate carbon nanocomposites</a>. <em>Journal of Applied Physics</em>, 2016.</li>
-							</ul>
-										
-							
-
-						</section>
-										
-
-				
-
-				    </div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy;  All rights reserved.</p>	
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

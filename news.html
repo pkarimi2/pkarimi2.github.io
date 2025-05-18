@@ -1,86 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <title>Pouyan Karimi Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Pouyan Karimi Portfolio</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/pori.jpg" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/pori.jpg" />
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-  <!-- Inline Styles -->
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    p {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-  </style>
-</head>
+    <!-- Inline Styles -->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-<body class="is-preload" style="background-image: url(images/code.jpg); background-size: 100%;">
+      p {
+        text-align: justify;
+        text-justify: inter-word;
+      }
 
-  <!-- Wrapper -->
-  <div id="wrapper">
+      nav {
+        background-color: #000000 !important;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    <!-- Header Banner -->
-    <header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px;"></header>
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
 
-    <!-- Navigation Bar -->
-    <nav id="nav" style="background-color: black; color: orange; height: 100px;">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="honors.html">Honors</a></li>
-        <li><a href="swe-projects.html">SWE Projects</a></li>
-        <li><a class="active" href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      nav ul li {
+        margin: 0 20px;
+        display: inline-block;
+      }
 
-    <!-- Main Content Area -->
-    <div id="main">
+      nav ul li a {
+        color: orange;
+        font-size: 20px;
+        text-decoration: none;
+      }
 
-      <!-- News Section -->
-      <section class="main special" style="font-size: 1.2rem; text-align: justify;">
-        <h2 style="border-bottom: solid red; text-align: left; margin: 0;">
-          <strong>News</strong>
-        </h2>
-        <br />
+      nav ul li a.active {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload" style="background-image: url(images/code.jpg); background-size: 100%;">
+    <div id="wrapper">
+      <!-- Header Banner -->
+      <header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px;"></header>
+
+      <!-- Navigation Bar -->
+      <nav id="nav">
         <ul>
-          <li><a href="https://youtu.be/TZM1fS2QNHM" target="_blank" rel="noopener noreferrer" style="color: blue;">Hassan Aref award reception</a></li><br>
-          <li><a href="https://mediaspace.illinois.edu/media/t/1_7a1zbg6m/29471061" target="_blank" rel="noopener noreferrer" style="color: blue;">CSE 2018 presentation</a></li><br>
-          <li><a href="https://mechanical.illinois.edu/news/karimi-awarded-competitive-cse-fellowship" target="_blank" rel="noopener noreferrer" style="color: blue;">Karimi awarded competitive CSE fellowship</a></li><br>
-          <li><a href="https://mechanical.illinois.edu/news/mechse-competition-celebrates-art-research" target="_blank" rel="noopener noreferrer" style="color: blue;">MechSE competition celebrates art in research</a></li><br>
-          <li><a href="https://www.facebook.com/cse.illinois.edu/videos/we-would-like-to-announce-our-2018-2019-fellowssoumendu-bagchi-aerospace-enginee/1759632280811232/" target="_blank" rel="noopener noreferrer" style="color: blue;">CSE fellowship 2018 announcement</a></li><br>
-          <li><a href="https://www.facebook.com/cse.illinois.edu/photos/cse-fellow-pouyan-karimi-had-two-papers-featured-on-the-cover-of-journal-of-appl/1630827527025042/" target="_blank" rel="noopener noreferrer" style="color: blue;">JAP featured articles</a></li><br>
-          <li><a href="https://www.youtube.com/watch?v=TUWz7apj8RQ" target="_blank" rel="noopener noreferrer" style="color: blue;">CSE 2017 presentation</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Engineering Projects</a></li>
+          <li><a href="swe-projects.html">Software Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="honors.html">Honors</a></li>
+          <li><a class="active" href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </section>
+      </nav>
+
+      <!-- Main Content Area -->
+      <div id="main">
+        <!-- News Section -->
+        <section class="main special" style="font-size: 1.2rem; text-align: justify;">
+          <h2 style="border-bottom: solid red; text-align: left; margin: 0;">
+            <strong>News</strong>
+          </h2>
+          <br />
+          <ul>
+            <li><a href="https://youtu.be/TZM1fS2QNHM" target="_blank" rel="noopener noreferrer" style="color: blue;">Hassan Aref award reception</a></li><br />
+            <li><a href="https://mediaspace.illinois.edu/media/t/1_7a1zbg6m/29471061" target="_blank" rel="noopener noreferrer" style="color: blue;">CSE 2018 presentation</a></li><br />
+            <li><a href="https://mechanical.illinois.edu/news/karimi-awarded-competitive-cse-fellowship" target="_blank" rel="noopener noreferrer" style="color: blue;">Karimi awarded competitive CSE fellowship</a></li><br />
+            <li><a href="https://mechanical.illinois.edu/news/mechse-competition-celebrates-art-research" target="_blank" rel="noopener noreferrer" style="color: blue;">MechSE competition celebrates art in research</a></li><br />
+            <li><a href="https://www.facebook.com/cse.illinois.edu/videos/we-would-like-to-announce-our-2018-2019-fellowssoumendu-bagchi-aerospace-enginee/1759632280811232/" target="_blank" rel="noopener noreferrer" style="color: blue;">CSE fellowship 2018 announcement</a></li><br />
+            <li><a href="https://www.facebook.com/cse.illinois.edu/photos/cse-fellow-pouyan-karimi-had-two-papers-featured-on-the-cover-of-journal-of-appl/1630827527025042/" target="_blank" rel="noopener noreferrer" style="color: blue;">JAP featured articles</a></li><br />
+            <li><a href="https://www.youtube.com/watch?v=TUWz7apj8RQ" target="_blank" rel="noopener noreferrer" style="color: blue;">CSE 2017 presentation</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">&copy; All rights reserved.</p>
+      </footer>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <p class="copyright">&copy; All rights reserved.</p>
-    </footer>
-  </div>
-
-  <!-- JavaScript Files -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
-</body>
+    <!-- JavaScript Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

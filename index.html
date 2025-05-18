@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!-- this is how it shows the comment!-->
 <html>
  <head>
   <title>
@@ -13,41 +12,101 @@
    <link href="assets/css/noscript.css" rel="stylesheet"/>
   </noscript>
   <style>
-   strong {font-weight:bold;}	
-			body{
-				font-family:Arial, Helvetica, sans-serif
-			}
-			p {
-  				text-align: justify;
-  				text-justify: inter-word;
-			}
-			li {
-  				text-align: justify;
-  				text-justify: inter-word;
-			}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    nav {
+      background-color: #000000 !important;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+      display: inline-block;
+    }
+
+    nav ul li a {
+      color: orange;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+    }
   </style>
  </head>
- <body class="is-preload" style="background-image: url(images/code.jpg); background-size: 100% ;">
-  <!-- Wrapper -->
+ <body class="is-preload" style="background-image: url(images/code.jpg); background-size: 100%;">
   <div id="wrapper">
-   <!-- Header -->
-   <header class="alt" id="header" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px; ">
+   <header class="alt" id="header" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px;">
    </header>
-
-
-  <!-- Nav -->
-    <nav id="nav" style="background-color: black; color: orange; height: 100px; ">
-      <ul>
-        <li><a class="active" href="index.html" >Home</a></li>
-        <li><a href="projects.html" >Projects</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="honors.html" >Honors</a></li>
-        <li><a href="swe-projects.html">SWE Projects</a></li>
-        <li><a href="news.html" >News</a></li>
-        <li><a href="contact.html"> Contact</a></li>
-      </ul>
-    </nav>
+   <!-- Nav -->
+   <nav id="nav">
+    <ul>
+     <li>
+      <a class="active" href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="projects.html">
+       Engineering Projects
+      </a>
+     </li>
+     <li>
+      <a href="swe-projects.html">
+       Software Projects
+      </a>
+     </li>
+     <li>
+      <a href="publications.html">
+       Publications
+      </a>
+     </li>
+     <li>
+      <a href="teaching.html">
+       Teaching
+      </a>
+     </li>
+     <li>
+      <a href="honors.html">
+       Honors
+      </a>
+     </li>
+     <li>
+      <a href="news.html">
+       News
+      </a>
+     </li>
+     <li>
+      <a href="contact.html">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </nav>
    <!-- Main -->
    <div id="main" style="color: black;">
     <!-- Home -->
@@ -63,14 +122,14 @@
        </header>
        <p>
         <p>
-         Hello! I'm Pouyan Karimi &mdash; an engineer with a Ph.D. in Engineering Mechanics from the University of Illinois Urbana-Champaign, with a minor in Electrical and Computer Engineering. My doctoral research, conducted under the supervision of
+         Hello! I'm Pouyan Karimi — an engineer with a Ph.D. in Engineering Mechanics from the University of Illinois Urbana-Champaign, with a minor in Electrical and Computer Engineering. My doctoral research, conducted under the supervision of
          <a href="https://mechse.illinois.edu/people/profile/martinos" style="color: #0000FF" target="_blank">
           Prof. Martin Ostoja-Starzewski
          </a>
          , focused on computational modeling of advanced materials and random media using high-performance computing and finite element methods. I developed scalable simulation tools to analyze structural and physical behavior across multiple scales, including collaborative work with Boeing.
          <br/>
          <br/>
-         I hold a Master&rsquo;s degree in Structural Engineering (Engineering Mechanics) from the University of Tehran and a Bachelor&rsquo;s degree in Civil Engineering. My background combines deep theoretical insight with practical experience in structural analysis, materials modeling, and scientific computing. I&rsquo;m passionate about structural design, numerical simulation, and building software tools that solve real engineering challenges.
+         I hold a Master’s degree in Structural Engineering (Engineering Mechanics) from the University of Tehran and a Bachelor’s degree in Civil Engineering. My background combines deep theoretical insight with practical experience in structural analysis, materials modeling, and scientific computing. I’m passionate about structural design, numerical simulation, and building software tools that solve real engineering challenges.
         </p>
        </p>
       </div>
@@ -104,7 +163,7 @@
        <li>
         <a class="icon brands fa-google alt" href="https://scholar.google.com/citations?user=5ZpMyikAAAAJ&amp;hl=en" style="font-size:1.7rem;color:rgb(66, 133, 244)" target="_blank">
          <span class="label">
-          ResearchGate
+          GoogleScholar
          </span>
         </a>
        </li>
@@ -126,7 +185,7 @@
      <br/>
      <br/>
      <p style="text-align: center;">
-      Be sure to check back and get the latest on what I&rsquo;m up to!
+      Be sure to check back and get the latest on what I’m up to!
      </p>
     </section>
     <!-- projects  -->
@@ -217,7 +276,7 @@
       I am honored to have taught at some of the top universities, offering a variety of courses across Mechanical Engineering, 
       Structural Engineering, and Computer Science. In addition to my university teaching, I have also had the privilege of 
       instructing students through the TRIO Upward Bound program at the Office of Minority Student Affairs at UIUC. 
-      Throughout all the semesters I have taught, I have consistently received excellent evaluations from my students&mdash;an acknowledgment that 
+      Throughout all the semesters I have taught, I have consistently received excellent evaluations from my students—an acknowledgment that 
       continues to inspire my commitment to education
      </p>
      Please find my full list of teaching expreiences on the link below
@@ -236,10 +295,14 @@
      <header class="major">
       <br/>
       <br/>
-      <h2>Publications</h2>
+      <h2>
+       Publications
+      </h2>
      </header>
      <p style=" font-size: 1.3rem; ">
-      <strong>2020</strong>
+      <strong>
+       2020
+      </strong>
      </p>
      <ol>
       <li style="text-align: left; font-size: 1.2rem; text-align: justify;">
@@ -256,7 +319,7 @@
       <li style="text-align: left; font-size: 1.2rem; text-align: justify;">
        P. Karimi, A. Malyarenko, M. Ostoja-Starzewski, and Xian Zhang.
        <a href="https://www.sciencedirect.com/science/article/pii/S0020722519319184?via%3Dihub" rel="noopener noreferrer" style="color: #0000FF" target="_blank">
-        RVE problem, random &filig;elds, and stochastic mechanics
+        RVE problem, random ﬁelds, and stochastic mechanics
        </a>
        .
        <em>
@@ -266,13 +329,15 @@
       </li>
      </ol>
      <p style=" font-size: 1.3rem; ">
-      <strong>2019</strong>
+      <strong>
+       2019
+      </strong>
      </p>
      <ol>
       <li style="text-align: left; font-size: 1.2rem; text-align: justify;">
        A. Amiri-Hezaveh, P. Karimi, and M. Ostoja-Starzewski.
        <a href="https://journals.sagepub.com/doi/10.1177/1081286519857127" rel="noopener noreferrer" style="color: #0000FF" target="_blank">
-        Stress &filig;eld formulation of electromagneto-elastic materials
+        Stress ﬁeld formulation of electromagneto-elastic materials
        </a>
        .
        <em>
@@ -286,7 +351,9 @@
         Elastodynamics of a multilayered transversely isotropic half-space due to rigid motion of foundation
        </a>
        .
-       <em>Wave Motion</em>
+       <em>
+        Wave Motion
+       </em>
        .
       </li>
       <li style="text-align: left; font-size: 1.2rem; text-align: justify;">
@@ -295,7 +362,9 @@
         Electrostatic and magnetostatic properties of random materials
        </a>
        .
-       <em> Physical Review E</em>
+       <em>
+        Physical Review E
+       </em>
        .
       </li>
      </ol>
@@ -316,7 +385,9 @@
      <header class="major">
       <br/>
       <br/>
-      <h2>Honors</h2>
+      <h2>
+       Honors
+      </h2>
      </header>
      <ul>
       <li style="text-align: left; font-size: 1.2rem; text-align: justify;">
@@ -338,7 +409,9 @@
       <li style="text-align: left; font-size: 1.2rem; text-align: justify;">
        <a href="images/jap2018.PNG" rel="noopener noreferrer" style="color: #0000FF" target="_blank">
         Featured
-        <em>Journal of Applied Physics</em>
+        <em>
+         Journal of Applied Physics
+        </em>
         article
        </a>
        , 2018.
@@ -396,7 +469,7 @@
    <!-- Footer -->
    <footer id="footer">
     <p class="copyright">
-     &copy;  All rights reserved.
+     ©  All rights reserved.
     </p>
    </footer>
   </div>
