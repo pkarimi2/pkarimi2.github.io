@@ -80,3 +80,51 @@ This project is licensed under the **MIT License** — feel free to use, modify,
 Ph.D. in Engineering Mechanics  
 [Portfolio](https://pkarimi2.github.io) | [LinkedIn](https://linkedin.com/in/pkarimi2)
 
+---
+
+## 📘 Full Site Structure
+
+| Section         | Anchor or Page            | Description                                                           |
+|----------------|---------------------------|-----------------------------------------------------------------------|
+| Home           | `#home`                   | Overview about Pouyan Karimi and academic summary                     |
+| Projects       | `#projects`               | Visual descriptions of key research projects                          |
+| Teaching       | `#teaching`               | Teaching experiences and roles                                        |
+| Publications   | `#publications`           | Selected academic papers with links                                   |
+| Honors         | `#honors`                 | Academic awards and fellowships                                       |
+| News           | `#news`                   | Media highlights and presentations                                    |
+| Contact        | `contact.html`            | Email + optional form (for collaboration)                             |
+
+---
+
+## 🏗️ Folder Structure
+
+```
+pkarimi2.github.io/
+│
+├── index.html           # Main portfolio (single page structure)
+├── projects.html        # Detailed view for each project
+├── teaching.html        # Full list of courses taught
+├── publications.html    # Archive of published works
+├── honors.html          # Extended honors and awards
+├── news.html            # News & media
+├── contact.html         # Contact form or direct email
+│
+├── assets/
+│   ├── css/
+│   │   └── main.css      # Main stylesheet
+│   ├── js/
+│   │   └── main.js       # JS effects and scrolling
+│   └── images/           # All image files (project GIFs, portraits, icons)
+└── README.md
+```
+
+---
+
+## ✅ Features
+
+- Clean one-page scrollable layout
+- Fully responsive for mobile and desktop
+- Styled with minimal CSS, no dependencies
+- FontAwesome social icons (GitHub, LinkedIn, ResearchGate, Google Scholar)
+- Easy to clone, edit, and host via GitHub Pages
+
