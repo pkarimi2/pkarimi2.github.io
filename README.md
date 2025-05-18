@@ -1,10 +1,9 @@
 
-# Pouyan Karimi's Portfolio Template
+# Pouyan Karimi's Personal Portfolio
 
-This repository contains the source code for my personal academic and research portfolio, hosted via GitHub Pages.
+This repository contains the source code for my personal academic, research, and software engineering portfolio, hosted via GitHub Pages.
 
-It is a clean, customizable static website showcasing professional experience, research projects, publications, teaching, honors, and media features.  
-You can use this repository as a **template** for your own academic portfolio.
+It is a clean, customizable static website showcasing my professional experience, software engineering projects, research work, publications, teaching, honors, and media features.
 
 ---
 
@@ -16,9 +15,9 @@ You can use this repository as a **template** for your own academic portfolio.
 
 ## 🧰 Technologies Used
 
-- HTML5 / CSS3
-- JavaScript (for interactivity)
-- GitHub Pages (for hosting)
+- HTML5 / CSS3  
+- JavaScript (for interactivity)  
+- GitHub Pages (for hosting)  
 - Font Awesome (for icons)
 
 No frameworks or static site generators required — just plain, editable files.
@@ -30,20 +29,22 @@ No frameworks or static site generators required — just plain, editable files.
 ```
 pkarimi2.github.io/
 │
-├── index.html           # Main portfolio (single page structure)
-├── projects.html        # Detailed view for each project
-├── teaching.html        # Full list of courses taught
-├── publications.html    # Archive of published works
-├── honors.html          # Extended honors and awards
-├── news.html            # News & media
-├── contact.html         # Contact form or direct email
+├── index.html           # Main portfolio (landing page)
+├── projects.html        # Research projects
+├── swe-projects.html    # Software engineering projects (interactive games, apps)
+├── teaching.html        # Courses taught
+├── publications.html    # Published academic papers
+├── honors.html          # Awards and recognitions
+├── news.html            # Media and news mentions
+├── contact.html         # Contact form or info
 │
 ├── assets/
 │   ├── css/
 │   │   └── main.css      # Main stylesheet
 │   ├── js/
 │   │   └── main.js       # JS effects and scrolling
-│   └── images/           # Project GIFs, portraits, icons
+│   └── images/           # Icons, visuals
+├── images/              # Project and SWE thumbnails
 └── README.md
 ```
 
@@ -51,65 +52,63 @@ pkarimi2.github.io/
 
 ## 📘 Site Structure Overview
 
-| Section         | Page / Anchor            | Description                                                           |
-|----------------|--------------------------|-----------------------------------------------------------------------|
-| Home           | `#home`                  | Introduction, academic background                                     |
-| Projects       | `#projects`              | Research projects with visuals and links                              |
-| Teaching       | `#teaching`              | Roles and courses taught at top institutions and outreach programs    |
-| Publications   | `#publications`          | List of peer-reviewed research papers                                 |
-| Honors         | `#honors`                | Awards, fellowships, and recognitions                                 |
-| News           | `#news`                  | Media features, recorded talks, and academic news                     |
-| Contact        | `contact.html`           | Contact information and inquiry form                                  |
+| Section        | Page / Anchor         | Description                                                            |
+|----------------|------------------------|------------------------------------------------------------------------|
+| Home           | `#home`                | Intro and academic overview                                            |
+| Projects       | `#projects`            | Research and academic projects                                         |
+| SWE Projects   | `swe-projects.html`    | Software engineering work like the Connect Four game                  |
+| Teaching       | `#teaching`            | Courses taught and educational experience                              |
+| Publications   | `#publications`        | Academic publications                                                  |
+| Honors         | `#honors`              | Fellowships, scholarships, and honors                                  |
+| News           | `#news`                | Media features, interviews, and academic news                          |
+| Contact        | `contact.html`         | Direct contact form or email info                                      |
 
 ---
 
-## 🚀 How to Use This Portfolio
+## 🚀 How to Edit or Extend
 
-1. **Clone the repository:**
+1. **Edit content:**
+   - Update `.html` files with your own information, media, and links.
+   - Replace project thumbnails and images in the `images/` folder.
+
+2. **Preview locally:**
+   - Open `index.html` in your browser.
+
+3. **Push updates to GitHub:**
    ```bash
-   git clone https://github.com/pkarimi2/pkarimi2.github.io.git
+   git add .
+   git commit -m "Update portfolio content"
+   git push origin master
    ```
 
-2. **Customize content:**
-   - Edit `index.html` and other `.html` files with your own text, links, and images.
-   - Update project thumbnails and assets in the `assets/images/` folder.
-   - Change fonts/colors in `assets/css/main.css`.
-
-3. **Preview locally:**
-   - Simply open `index.html` in your browser.
-
-4. **Deploy on GitHub Pages:**
-   - Push your repo to GitHub (e.g. `username.github.io`)
-   - Go to repo → Settings → Pages → Choose `main` branch → Save
-
-Your site will be available at:
-```
-https://<your-username>.github.io
-```
+4. **View live:**
+   ```
+   https://pkarimi2.github.io
+   ```
 
 ---
 
-## ✏️ Customization Tips
+## ✏️ Personalization Notes
 
-- Use your own portrait and project images in the `images/` folder
-- Update links to your academic profiles: GitHub, LinkedIn, ResearchGate, Google Scholar
-- Add new sections or projects easily by duplicating `<article>` blocks in the HTML
+- Use `swe-projects.html` to highlight SWE work like:
+  - Connect Four (JavaScript, OOP)
+  - Future web tools, scripts, or apps
+- Add new `<article>` blocks to each section as needed
 
 ---
 
 ## ✅ Features
 
-- Clean, minimalist, one-page design
-- Responsive layout for all devices
-- Lightweight and fast — no frameworks needed
-- Built-in support for social media and academic profile links
-- Ready for public hosting with GitHub Pages
+- Clean and minimalist design  
+- Mobile responsive  
+- No dependencies — fast and lightweight  
+- Fully hosted on GitHub Pages  
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — you are free to use, modify, and share it for personal or professional purposes.
+This project is licensed under the **MIT License** — you are free to use and modify it personally or professionally.
 
 ---
 
