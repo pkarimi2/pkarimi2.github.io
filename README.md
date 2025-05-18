@@ -1,3 +1,4 @@
+
 # Pouyan Karimi's Portfolio Template
 
 This repository contains the source code for my personal academic and research portfolio, hosted via GitHub Pages.
@@ -116,5 +117,6 @@ This project is licensed under the **MIT License** — you are free to use, modi
 
 **Pouyan Karimi**  
 Ph.D. in Engineering Mechanics  
+M.S. in Electrical and Computer Engineering  
+University of Illinois, Urbana  
 🔗 [Portfolio](https://pkarimi2.github.io) | [LinkedIn](https://linkedin.com/in/pkarimi2)
-
