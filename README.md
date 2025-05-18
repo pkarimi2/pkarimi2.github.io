@@ -1,102 +1,30 @@
 # Pouyan Karimi's Portfolio Template
 
-This repository contains the source code for my personal portfolio website, hosted via GitHub Pages.  
-It is a simple, customizable static website showcasing professional experience, academic work, and selected projects.
+This repository contains the source code for my personal academic and research portfolio, hosted via GitHub Pages.
 
-You can use this repository as a **template** for your own portfolio.
+It is a clean, customizable static website showcasing professional experience, research projects, publications, teaching, honors, and media features.  
+You can use this repository as a **template** for your own academic portfolio.
 
-## 🔗 Live Demo
+---
 
-Visit the site here: [https://pkarimi2.github.io](https://pkarimi2.github.io)
+## 🔗 Live Site
+
+🌐 [https://pkarimi2.github.io](https://pkarimi2.github.io)
 
 ---
 
 ## 🧰 Technologies Used
 
 - HTML5 / CSS3
+- JavaScript (for interactivity)
 - GitHub Pages (for hosting)
-- Optional: JavaScript (for interactivity)
+- Font Awesome (for icons)
 
-No frameworks or static site generators are required — just plain, editable files.
-
----
-
-## 📁 Folder Structure
-
-```
-pkarimi2.github.io/
-│
-├── index.html           # Main homepage
-├── about.html           # About or bio page (if used)
-├── projects.html        # List of selected work or publications
-├── contact.html         # Contact form or contact info
-├── style.css            # Site-wide CSS styles
-├── assets/              # Folder for images, CV PDFs, etc.
-└── README.md            # This file
-```
+No frameworks or static site generators required — just plain, editable files.
 
 ---
 
-## 🚀 Getting Started
-
-To use this portfolio as a template:
-
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/pkarimi2/pkarimi2.github.io.git
-   ```
-
-2. **Customize content:**
-   - Edit `index.html`, `projects.html`, etc. using any code editor
-   - Replace content and links with your own information
-   - Add images or PDFs to the `assets/` folder
-
-3. **Preview locally:**
-   - Open `index.html` in your browser
-
-4. **Publish your version:**
-   - Push changes to your GitHub repo
-   - GitHub Pages will automatically host it at `https://<your-username>.github.io`
-
----
-
-## ✏️ Customization Tips
-
-- Modify colors and fonts via `style.css`
-- Add new sections by duplicating and modifying `.html` files
-- You can link your CV, GitHub, or LinkedIn directly from the homepage
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — feel free to use, modify, and share.
-
----
-
-## 👤 Author
-
-**Pouyan Karimi**  
-Ph.D. in Engineering Mechanics  
-[Portfolio](https://pkarimi2.github.io) | [LinkedIn](https://linkedin.com/in/pkarimi2)
-
----
-
-## 📘 Full Site Structure
-
-| Section         | Anchor or Page            | Description                                                           |
-|----------------|---------------------------|-----------------------------------------------------------------------|
-| Home           | `#home`                   | Overview about Pouyan Karimi and academic summary                     |
-| Projects       | `#projects`               | Visual descriptions of key research projects                          |
-| Teaching       | `#teaching`               | Teaching experiences and roles                                        |
-| Publications   | `#publications`           | Selected academic papers with links                                   |
-| Honors         | `#honors`                 | Academic awards and fellowships                                       |
-| News           | `#news`                   | Media highlights and presentations                                    |
-| Contact        | `contact.html`            | Email + optional form (for collaboration)                             |
-
----
-
-## 🏗️ Folder Structure
+## 🧱 Folder Structure
 
 ```
 pkarimi2.github.io/
@@ -114,17 +42,79 @@ pkarimi2.github.io/
 │   │   └── main.css      # Main stylesheet
 │   ├── js/
 │   │   └── main.js       # JS effects and scrolling
-│   └── images/           # All image files (project GIFs, portraits, icons)
+│   └── images/           # Project GIFs, portraits, icons
 └── README.md
 ```
 
 ---
 
+## 📘 Site Structure Overview
+
+| Section         | Page / Anchor            | Description                                                           |
+|----------------|--------------------------|-----------------------------------------------------------------------|
+| Home           | `#home`                  | Introduction, academic background                                     |
+| Projects       | `#projects`              | Research projects with visuals and links                              |
+| Teaching       | `#teaching`              | Roles and courses taught at top institutions and outreach programs    |
+| Publications   | `#publications`          | List of peer-reviewed research papers                                 |
+| Honors         | `#honors`                | Awards, fellowships, and recognitions                                 |
+| News           | `#news`                  | Media features, recorded talks, and academic news                     |
+| Contact        | `contact.html`           | Contact information and inquiry form                                  |
+
+---
+
+## 🚀 How to Use This Portfolio
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/pkarimi2/pkarimi2.github.io.git
+   ```
+
+2. **Customize content:**
+   - Edit `index.html` and other `.html` files with your own text, links, and images.
+   - Update project thumbnails and assets in the `assets/images/` folder.
+   - Change fonts/colors in `assets/css/main.css`.
+
+3. **Preview locally:**
+   - Simply open `index.html` in your browser.
+
+4. **Deploy on GitHub Pages:**
+   - Push your repo to GitHub (e.g. `username.github.io`)
+   - Go to repo → Settings → Pages → Choose `main` branch → Save
+
+Your site will be available at:
+```
+https://<your-username>.github.io
+```
+
+---
+
+## ✏️ Customization Tips
+
+- Use your own portrait and project images in the `images/` folder
+- Update links to your academic profiles: GitHub, LinkedIn, ResearchGate, Google Scholar
+- Add new sections or projects easily by duplicating `<article>` blocks in the HTML
+
+---
+
 ## ✅ Features
 
-- Clean one-page scrollable layout
-- Fully responsive for mobile and desktop
-- Styled with minimal CSS, no dependencies
-- FontAwesome social icons (GitHub, LinkedIn, ResearchGate, Google Scholar)
-- Easy to clone, edit, and host via GitHub Pages
+- Clean, minimalist, one-page design
+- Responsive layout for all devices
+- Lightweight and fast — no frameworks needed
+- Built-in support for social media and academic profile links
+- Ready for public hosting with GitHub Pages
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — you are free to use, modify, and share it for personal or professional purposes.
+
+---
+
+## 👤 Author
+
+**Pouyan Karimi**  
+Ph.D. in Engineering Mechanics  
+🔗 [Portfolio](https://pkarimi2.github.io) | [LinkedIn](https://linkedin.com/in/pkarimi2)
 
