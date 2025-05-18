@@ -1,110 +1,136 @@
-<!DOCTYPE HTML>
-<!-- this is how it shows the comment!-->
-<html>
-	<head>
-		<title>Pouyan Karimi Portfolio</title>
-		<link rel=" icon" href="images/pori.jpg" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-				
-			
-			body{
-				font-family:Arial, Helvetica, sans-serif
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Pouyan Karimi Portfolio</title>
 
-			}
-			p {
-  					text-align: justify;
-  					text-justify: inter-word;
-			}
-		</style>
-	</head>
-	
-	<body class="is-preload" style="background-image: url(images/code.jpg); background-size: 100% ;">
+  <!-- Favicon -->
+  <link rel="icon" href="images/pori.jpg" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Header -->
-					<header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px; ">
-					
-						
-					</header>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+</head>
 
-				<!-- Nav -->
-				<nav id="nav" style="background-color: black; color: orange; height: 100px; ">
-						
-					<ul>
-						<li><a href="index.html" >Home</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="teaching.html">Teaching</a></li>
-						<li><a href="publications.html">Publications</a></li>
-						<li><a href="honors.html" >Honors</a></li>
-						<li><a href="news.html" >News</a></li>
-						<li><a href="contact.html" class="active">Contact</a></li>
-					
-					</ul>
-				</nav>
+<body class="is-preload" style="background-image: url(images/code.jpg); background-size: 100%;">
 
-				<!-- Main -->
-					<div id="main">
-						<!-- news -->
-						<section id="contact" class="main special" style=" font-size: 1.2rem; text-align: justify; color: black;  ">
-							<div class="inner">
-								<h2 style="border-bottom: solid red; text-align: left; margin: 0px"><strong style="font-weight: bold;"> Get in touch</strong></h2><br>
-								<p>If you require any further information, feel free to contact me.</p>
-								<div class="split style1">
-									<section>
-										<form method="post" action="mailto:pkarimi2@illinois.edu">
-											<div class="fields">
-												<div class="field half">
-													<label for="name">Name</label>
-													<input type="text" name="name" id="name" placeholder="Your name"  style="background-color:; border: 2px solid black;"/><br>
-												</div>
-												<div class="field half">
-													<label for="email">Email</label>
-													<input type="text" name="email" id="email" placeholder="Your email" style="background-color:; border: 2px solid black;" /><br>
-												</div>
-												<div class="field">
-													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="5" placeholder="Message"style="background-color:; border: 2px solid black;" ></textarea><br>
-												</div>
-												<div>
-													<label for="myfile">Upload a file:</label>
-													<input type="file" id="myfile" name="MAX_FILE_SIZE" value="20e7" style=""><br><br>
-												</div>
-											</div>
-											<ul class="actions" action="mailto:pkarimi2@illinois.edu" >
-												<li><a href="" class="button submit" style="background-color: rgb(0, 255, 255); border: solid 2px  rgb(17, 17, 2); border-radius: 15px">Send Message</a></li>
-											</ul>
-										</form>
-									</section>
-									
-								</div>
-							</div>
-						</section>					
+  <!-- Wrapper -->
+  <div id="wrapper">
 
-				
+    <!-- Header -->
+    <header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 400px;"></header>
 
-				    </div>
+    <!-- Navigation -->
+    <nav id="nav" style="background-color: black; color: orange; height: 100px;">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="honors.html">Honors</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy;  All rights reserved.</p>	
-					</footer>
+    <!-- Main Section -->
+    <div id="main">
+      <section id="contact" class="main special" style="font-size: 1.2rem; text-align: justify; color: black;">
+        <div class="inner">
+          <h2 style="border-bottom: solid red; text-align: left; margin: 0px"><strong>Get in touch</strong></h2><br>
+          <p>If you require any further information, feel free to contact me.</p>
 
-			</div>
+          <!-- Contact Form -->
+          <div class="split style1">
+            <section>
+              <form method="POST" action="https://formspree.io/f/mqaqnjwb" id="contact-form">
+                <div class="fields">
+                  <!-- Name -->
+                  <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required style="border: 2px solid black;" />
+                  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                  <!-- Email -->
+                  <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required style="border: 2px solid black;" />
+                  </div>
 
-	</body>
+                  <!-- Message -->
+                  <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Your message" required style="border: 2px solid black;"></textarea>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <ul class="actions">
+                  <li>
+                    <button type="submit" class="button submit"
+                      style="background-color: aqua; border: 2px solid rgb(17, 17, 2); border-radius: 15px;">
+                      Send Message
+                    </button>
+                  </li>
+                </ul>
+              </form>
+
+              <!-- Hidden thank-you message -->
+              <p id="thank-you" style="display:none; color: green; font-weight: bold; font-size: 1.1rem;">
+                Thank you! Your message has been sent successfully.
+              </p>
+
+              <!-- Script to handle inline thank-you -->
+              <script>
+                const form = document.getElementById("contact-form");
+                form.addEventListener("submit", async function (e) {
+                  e.preventDefault();
+                  const data = new FormData(form);
+                  const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                  });
+
+                  if (response.ok) {
+                    form.style.display = "none";
+                    document.getElementById("thank-you").style.display = "block";
+                  } else {
+                    alert("Oops! Something went wrong. Please try again.");
+                  }
+                });
+              </script>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
