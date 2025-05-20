@@ -1,0 +1,43 @@
+nav {
+  background-color: #000000 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100vw;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto; /* center on wide screens */
+  padding: 0;
+  min-width: fit-content;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  flex: 0 0 auto;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: orange;
+  font-size: 18px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+/* Optional: make text smaller on small screens */
+@media (max-width: 600px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
