@@ -1,120 +1,106 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Pouyan Karimi Portfolio</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="icon" href="images/pori.jpg" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Pouyan Karimi Portfolio</title>
+  <link rel="icon" href="images/pori.jpg" />
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(images/code.jpg);
+      background-size: 100%;
+      overflow-x: hidden;
+    }
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+    <header id="header" class="alt"></header>
 
-      p {
-        text-align: justify;
-        text-justify: inter-word;
-      }
+    <!-- Navbar -->
+    <nav id="nav">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Engineering Projects</a></li>
+        <li><a href="swe-projects.html">Software Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="honors.html">Honors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-    </style>
-  </head>
-  <body style="background-image: url(images/code.jpg); background-size: 100%;">
-    <div id="wrapper">
-      <header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 150px;"></header>
+    <!-- Main Content -->
+    <div id="main">
+      <section class="main special" style="text-align: justify;">
+        <a href="projects.html" class="button" style="font-size: 1.5rem; font-weight: bold; background-color: greenyellow; border: 4px solid black; float: right;">Back to Engineering Projects</a>
 
-      <!-- Navigation Bar -->
-      <nav id="nav">
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="projects.html">Engineering Projects</a></li>
-          <li><a href="swe-projects.html">Software Projects</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="honors.html">Honors</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <h2 style="border-bottom: solid red; text-align: left; margin-top: 3rem;"><strong>Alignment and Polydispersity of Nanocomposites</strong></h2>
+
+        <p style="color: black;">
+          The goal of this project is to develop reliable computational algorithms to accurately predict the electrical properties of polydisperse nanocomposites. Disordered fields of fillers will be generated using the random sequential addition (RSA) algorithm, with the desired fillers added one by one such that the most recently added particle does not collide with the previously added ones; the process is continued until the desired volume fraction is reached. The combination of fillers and filler alignment effect on the electrical properties of nanocomposites was modeled. I gratefully acknowledge the use of the Taub cluster resources provided under the Computational Science and Engineering (CSE) program at the University of Illinois. In the figures below, the fillers shown in magenta belong to the percolating cluster.
+        </p>
+
+        <div class="row" style="margin: auto; text-align: center;">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/prolate.png" class="image fit thumb"><img src="images/prolate.png" alt="Effect of alignment on prolate fillers" width="45%" /></a>
+            <h3 style="color: black;">Effect of alignment on prolate fillers</h3>
+          </article>
+
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/oblate.png" class="image fit thumb"><img src="images/oblate.png" alt="Effect of alignment on oblate fillers" width="45%" /></a>
+            <h3 style="color: black;">Effect of alignment on oblate fillers</h3>
+          </article>
+        </div>
+
+        <div class="column" style="margin: 0.5rem auto; text-align: center;">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/polyd.gif"><img src="images/polyd.gif" style="width: 50%; margin: 0 auto; display: block;" /></a>
+            <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Realization of hybrid nanocomposite with polydisperse fillers</h3>
+          </article>
+        </div>
+
+        <h3 style="color: black; margin: 1rem 0 0.5rem 0;">References</h3>
+        <ul style="color: black;">
+          <li>S. Kale, P. Karimi, F.A. Sabet, I. Jasiuk, and M. Ostoja-Starzewski. <a href="https://aip.scitation.org/doi/10.1063/1.5019945" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Tunneling-percolation model of multicomponent nanocomposites</a>. <em>Journal of Applied Physics</em>, 2018. (Featured article on the cover page)</li>
+          <li>P. Karimi, A. Amiri-Hezaveh, M. Ostoja-Starzewski, and J.-M. Jin. <a href="https://aip.scitation.org/doi/10.1063/1.5000045" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Electromagnetic characteristics of systems of prolate and oblate ellipsoids</a>. <em>Journal of Applied Physics</em>, 2017. (Featured article on the cover page)</li>
         </ul>
-      </nav>
-
-      <!-- Main -->
-      <div id="main">
-        <section class="main special" style="text-align: justify;">
-          <a href="projects.html" class="button" style="font-size: 1.5rem; font-weight: bold; background-color: greenyellow; border: 4px solid black; float: right;">
-            Back to Engineering Projects
-          </a>
-
-          <h2 style="border-bottom: solid red; text-align: left; margin-top: 3rem;"><strong>Alignment and Polydispersity of Nanocomposites</strong></h2>
-
-          <p style="color: black;">
-            The goal of this project is to develop reliable computational algorithms to accurately predict the electrical properties of polydisperse nanocomposites. Disordered fields of fillers will be generated using the random sequential addition (RSA) algorithm, with the desired fillers added one by one such that the most recently added particle does not collide with the previously added ones; the process is continued until the desired volume fraction is reached. The combination of fillers and filler alignment effect on the electrical properties of nanocomposites was modeled. I gratefully acknowledge the use of the Taub cluster resources provided under the Computational Science and Engineering (CSE) program at the University of Illinois. In below figures, the fillers shown in magenta belong to the percolating cluster.
-          </p>
-
-          <div class="row" style="margin: auto; text-align: center;">
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/prolate.png" class="image fit thumb"><img src="images/prolate.png" alt="" width="45%" /></a>
-              <h3 style="color: black;">Effect of alignment on prolate fillers</h3>
-            </article>
-
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/oblate.png" class="image fit thumb"><img src="images/oblate.png" alt="" width="45%" /></a>
-              <h3 style="color: black;">Effect of alignment on oblate fillers</h3>
-            </article>
-          </div>
-
-          <div class="column" style="margin: 0.5rem auto; text-align: center;">
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/polyd.gif">
-  				<img src="images/polyd.gif" style="width: 50%; margin: 0 auto; display: block;" />
-			  </a>
-              <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Realization of hybrid nanocomposite with polydisperse fillers</h3>
-            </article>
-          </div>
-
-          <h3 style="color: black; margin: 1rem 0 0.5rem 0;">References</h3>
-          <ul style="color: black;">
-            <li>S. Kale, P. Karimi, F.A. Sabet, I. Jasiuk, and M. Ostoja-Starzewski. <a href="https://aip.scitation.org/doi/10.1063/1.5019945" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Tunneling-percolation model of multicomponent nanocomposites</a>. <em>Journal of Applied Physics</em>, 2018. (Featured article on the cover page)</li>
-            <li>P. Karimi, A. Amiri-Hezaveh, M. Ostoja-Starzewski, and J.-M. Jin. <a href="https://aip.scitation.org/doi/10.1063/1.5000045" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Electromagnetic characteristics of systems of prolate and oblate ellipsoids</a>. <em>Journal of Applied Physics</em>, 2017. (Featured article on the cover page)</li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">&copy; All rights reserved.</p>
-      </footer>
+      </section>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      const nav = document.getElementById("nav");
-      // Restore scroll position on load
-      window.addEventListener("load", () => {
-        const scrollLeft = sessionStorage.getItem("navScrollLeft");
-        if (scrollLeft !== null) {
-          nav.scrollLeft = parseInt(scrollLeft, 10);
-        }
-      });
-      // Save scroll position before navigation
-      window.addEventListener("beforeunload", () => {
-        sessionStorage.setItem("navScrollLeft", nav.scrollLeft);
-      });
-    </script>
-    <script>
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("menu");
-      if (toggle && menu) {
-        toggle.addEventListener("click", () => {
-          menu.classList.toggle("show");
-        });
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; 2025 Pouyan Karimi. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    const nav = document.getElementById("nav");
+    window.addEventListener("load", () => {
+      const scrollLeft = sessionStorage.getItem("navScrollLeft");
+      if (scrollLeft !== null) {
+        nav.scrollLeft = parseInt(scrollLeft, 10);
       }
-    </script>
-  </body>
+    });
+    window.addEventListener("beforeunload", () => {
+      sessionStorage.setItem("navScrollLeft", nav.scrollLeft);
+    });
+  </script>
+</body>
 </html>

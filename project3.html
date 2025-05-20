@@ -1,118 +1,107 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Pouyan Karimi Portfolio</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="icon" href="images/pori.jpg" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Pouyan Karimi Portfolio</title>
+  <link rel="icon" href="images/pori.jpg" />
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(images/code.jpg);
+      background-size: 100%;
+      overflow-x: hidden;
+    }
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+    <header id="header" class="alt"></header>
 
-      p {
-        text-align: justify;
-        text-justify: inter-word;
-      }
+    <!-- Navbar -->
+    <nav id="nav">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Engineering Projects</a></li>
+        <li><a href="swe-projects.html">Software Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="honors.html">Honors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-    </style>
-  </head>
-  <body style="background-image: url(images/code.jpg); background-size: 100%;">
-    <div id="wrapper">
-      <header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 150px;"></header>
+    <!-- Main -->
+    <div id="main">
+      <section class="main special" style="text-align: justify;">
+        <a href="projects.html" class="button" style="font-size: 1.5rem; font-weight: bold; background-color: greenyellow; border: 4px solid black; float: right;">Back to Engineering Projects</a>
 
-      <!-- Navigation Bar -->
-      <nav id="nav">
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="projects.html">Engineering Projects</a></li>
-          <li><a href="swe-projects.html">Software Projects</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="honors.html">Honors</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <h2 style="border-bottom: solid red; text-align: left; margin-top: 3rem;"><strong>Effective Properties of Random Microstructures</strong></h2>
+
+        <p style="color: black;">
+          Scale dependence of electrostatic and magnetostatic properties is investigated in the setting of spatially random linear lossless materials with statistically homogeneous and spatially ergodic random microstructures. First, from the Hill-Mandel homogenization conditions adapted to electric and magnetic fields, uniform boundary conditions are formulated for a statistical volume element (SVE). From these conditions, there follow upper and lower mesoscale bounds on the macroscale (effective) electrical permittivity and magnetic permeability. Using computational electromagnetics algorithms, these bounds are obtained through numerical simulations for different composites. The simulation results demonstrate a scale-dependent trend of these bounds towards the properties of a representative volume element (RVE).
+        </p>
+
+        <div class="column" style="margin: auto; text-align: center;">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/homog2.JPG" class="image fit thumb"><img src="images/homog2.JPG" width="99%" style="margin: 0;" /></a>
+            <h3 style="color: black; margin: 0.5rem 0 6.5rem 0;">Homogenization methodology</h3>
+          </article>
+        </div>
+
+        <div class="row" style="margin: 0.5rem auto; text-align: center;">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/homog3d1.png" class="image fit thumb"><img src="images/homog3d1.png" alt="" /></a>
+            <h3 style="color: black; margin: 0.5rem 0 2.5rem 0;">3D three-phase random checkerboard on the 10×10×10 lattices</h3>
+          </article>
+
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/homog3d.gif" class="image fit thumb"><img src="images/homog3d.gif" alt="" /></a>
+            <h3 style="color: black; margin: 0.5rem 0 2.5rem 0;">Electric flux density norm (C/m<sup>2</sup>)</h3>
+          </article>
+        </div>
+
+        <h3 style="color: black; margin: 1rem 0 0.5rem 0;">References</h3>
+        <ul style="color: black;">
+          <li>P. Karimi, A. Malyarenko, M. Ostoja-Starzewski, and Xian Zhang. <a href="https://www.sciencedirect.com/science/article/pii/S0020722519319184?via%3Dihub" style="color: #0000FF;" target="_blank">RVE problem, random fields, and stochastic mechanics</a>. <em>International Journal of Engineering Science</em>, 2020.</li>
+          <li>P. Karimi, X. Zhang, S. Yan, M. Ostoja-Starzewski, and J.-M. Jin. <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.99.022120" target="_blank" style="color: #0000FF;">Electrostatic and magnetostatic properties of random materials</a>. <em>Physical Review E</em>, 2019.</li>
+          <li>M. Ostoja-Starzewski, S. Kale, P. Karimi, A. Malyarenko, B. Raghavan, S.I. Ranganathan, and J. Zhang. <a href="https://www.sciencedirect.com/science/article/pii/S0065215616300011" target="_blank" style="color: #0000FF;">Scaling to RVE in random media</a>. <em>Advances in Applied Mechanics</em>, 49:111–211, 2016.</li>
         </ul>
-      </nav>
-
-      <!-- Main Content -->
-      <div id="main">
-        <section class="main special" style="text-align: justify;">
-          <a href="projects.html" class="button" style="font-size: 1.5rem; font-weight: bold; background-color: greenyellow; border: 4px solid black; float: right;">
-            Back to Engineering Projects
-          </a>
-
-          <h2 style="border-bottom: solid red; text-align: left; margin-top: 3rem;"><strong>AC Electrical Conductivity of Random Composites</strong></h2>
-
-          <p style="color: black;">
-            Developed a numerical algorithm to evaluate electrical conductivity of random composites. The complex AC impedance of random composites was simulated. Real and imaginary parts of the complex conductivity vs. the frequency and the ﬁller fraction were extracted for three-dimensional systems. The results for frequency-dependent permittivity and conductivity can be used as input to calculate the shielding effectiveness of polymer nanocomposites under various conditions, including thickness, polarization type, and incident angle. Utilized a simulation-based approach to shrink the parameter space and identify optimal configurations.
-          </p>
-
-          <div class="column" style="margin: 0.5rem auto; text-align: center;">
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/gtn.png"><img src="images/gtn.jpg" width="100%" style="margin: 0;" /></a>
-              <h3 style="color: black; margin: 0.5rem 0 4rem 0;">Modeling capacity network of random composite as a graph</h3>
-            </article>
-          </div>
-
-          <div class="row" style="margin: 0.5rem auto; text-align: center;">
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/graph.png" class="image fit thumb"><img src="images/graph.png" /></a>
-              <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Graph representation of main current paths</h3>
-            </article>
-
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/graph.gif" class="image fit thumb"><img src="images/graph.gif" /></a>
-              <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Current path</h3>
-            </article>
-          </div>
-
-          <h3 style="color: black; margin: 1rem 0 0.5rem 0;">References</h3>
-          <ul style="color: black;">
-            <li>S. Kale, P. Karimi, F.A. Sabet, I. Jasiuk, and M. Ostoja-Starzewski. <a href="https://aip.scitation.org/doi/10.1063/1.5019945" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Tunneling-percolation model of multicomponent nanocomposites</a>. <em>Journal of Applied Physics</em>, 2018. (Featured article on the cover page)</li>
-            <li>P. Karimi, S. Kale, F. A. Sabet, M. Ostoja-Starzewski, I. Jasiuk. <a href="https://cdmhub.org/groups/asc2017" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Nanofiller geometry effects on electrical properties of composites</a>. American Society for Composites (ASC) 32nd Technical Conference, Oct 2017, IN, US.</li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">&copy; All rights reserved.</p>
-      </footer>
+      </section>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      const nav = document.getElementById("nav");
-      // Restore scroll position on load
-      window.addEventListener("load", () => {
-        const scrollLeft = sessionStorage.getItem("navScrollLeft");
-        if (scrollLeft !== null) {
-          nav.scrollLeft = parseInt(scrollLeft, 10);
-        }
-      });
-      // Save scroll position before navigation
-      window.addEventListener("beforeunload", () => {
-        sessionStorage.setItem("navScrollLeft", nav.scrollLeft);
-      });
-    </script>
-    <script>
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("menu");
-      if (toggle && menu) {
-        toggle.addEventListener("click", () => {
-          menu.classList.toggle("show");
-        });
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; 2025 Pouyan Karimi. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    const nav = document.getElementById("nav");
+    window.addEventListener("load", () => {
+      const scrollLeft = sessionStorage.getItem("navScrollLeft");
+      if (scrollLeft !== null) {
+        nav.scrollLeft = parseInt(scrollLeft, 10);
       }
-    </script>
-  </body>
+    });
+    window.addEventListener("beforeunload", () => {
+      sessionStorage.setItem("navScrollLeft", nav.scrollLeft);
+    });
+  </script>
+</body>
 </html>

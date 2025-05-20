@@ -1,110 +1,100 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Pouyan Karimi Portfolio</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="icon" href="images/pori.jpg" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Pouyan Karimi Portfolio</title>
+  <link rel="icon" href="images/pori.jpg" />
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(images/code.jpg);
+      background-size: 100%;
+      overflow-x: hidden;
+    }
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+    <header id="header" class="alt"></header>
 
-      p {
-        text-align: justify;
-        text-justify: inter-word;
-      }
+    <!-- Navbar -->
+    <nav id="nav">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Engineering Projects</a></li>
+        <li><a href="swe-projects.html">Software Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="honors.html">Honors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-    </style>
-  </head>
-  <body style="background-image: url(images/code.jpg); background-size: 100%;">
-    <div id="wrapper">
-      <header id="header" class="alt" style="background-image: url(images/uiuc.jpg); background-size: 100% 100%; height: 150px;"></header>
+    <!-- Main Content -->
+    <div id="main">
+      <section class="main special" style="text-align: justify;">
+        <a href="projects.html" class="button" style="font-size: 1.5rem; font-weight: bold; background-color: greenyellow; border: 4px solid black; float: right;">Back to Engineering Projects</a>
 
-      <!-- Navigation Bar -->
-      <nav id="nav">
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="projects.html">Engineering Projects</a></li>
-          <li><a href="swe-projects.html">Software Projects</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="honors.html">Honors</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <h2 style="border-bottom: solid red; text-align: left; margin-top: 3rem;"><strong>Stochastic Behavior in Atomic Couette Flow</strong></h2>
+
+        <p style="color: black;">
+          Using Non-equilibrium Molecular Dynamics (NEMD) simulations, we study the statistical properties of an atomic fluid undergoing planar Couette flow, in which particles interact via a Lennard-Jones potential. The bispectral density of the shear stress is used to measure the degree of departure from a Gaussian model and the degree of nonlinearity induced in the system owing to the applied strain rate. More evidence is provided by the probability density function of the shear stress. Observed the violations of the 2nd law of thermodynamics via the shear stress and identified primary variables of interest as density contrast and shear stress.
+        </p>
+
+        <div class="column" style="margin: auto; text-align: center;">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/bharath1.jpg"><img src="images/bharath1.jpg" style="width: 75%; margin: 0 auto; display: block;" /></a>
+            <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Sliding brick (left) and deforming cube (right) representations of the Lees–Edwards periodic BCs used in NEMD simulations of atomic fluids undergoing Couette flow.</h3>
+          </article>
+        </div>
+
+        <div class="column" style="margin: auto; text-align: center;">
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/bharath2.jpg"><img src="images/bharath2.jpg" style="width: 75%; margin: 0 auto; display: block;" /></a>
+            <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Probability density function of the shear stress</h3>
+          </article>
+        </div>
+
+        <h3 style="color: black; margin: 1rem 0 0.5rem 0;">References</h3>
+        <ul style="color: black;">
+          <li>B. V. Raghavan, P. Karimi, and M. Ostoja-Starzewski. <a href="https://www.sciencedirect.com/science/article/pii/S0378437117310798" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Stochastic characteristics and Second Law violations of atomic ﬂuids in Couette ﬂow</a>. <em>Physica A: Statistical Mechanics and its Applications</em>, 2018.</li>
         </ul>
-      </nav>
-
-      <!-- Main -->
-      <div id="main">
-        <section class="main special" style="text-align: justify;">
-          <a href="projects.html" class="button" style="font-size: 1.5rem; font-weight: bold; background-color: greenyellow; border: 4px solid black; float: right;">
-            Back to Engineering Projects
-          </a>
-          <h2 style="border-bottom: solid red; text-align:left; margin-top: 3rem;"><strong>Stochastic Behavior in Atomic Couette Flow</strong></h2>
-          <p style="color: black;">
-            Using Non-equilibrium Molecular Dynamics (NEMD) simulations, we study the statistical properties of an atomic fluid undergoing planar Couette flow, in which particles interact via a Lennard-Jones potential. The bispectral density of the shear stress is used to measure the degree of departure from a Gaussian model and the degree of nonlinearity induced in the system owing to the applied strain rate. More evidence is provided by the probability density function of the shear stress. Observed the violations of the 2nd law of thermodynamics via the shear stress and identified primary variables of interest as density contrast and shear stress.
-          </p>
-
-          <div class="column" style="margin: auto; text-align: center;">
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/bharath1.jpg"><img src="images/bharath1.jpg" style="width: 75%; margin: 0 auto; display: block;" /></a>
-              <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Sliding brick (left) and deforming cube (right) representations of the Lees–Edwards periodic BCs used in NEMD simulations of atomic fluids undergoing Couette flow.</h3>
-            </article>
-          </div>
-
-          <div class="column" style="margin: auto; text-align: center;">
-            <article class="col-6 col-12-xsmall work-item">
-              <a href="images/bharath2.jpg"><img src="images/bharath2.jpg" style="width: 75%; margin: 0 auto; display: block;" /></a>
-              <h3 style="color: black; margin: 0.5rem 0 3rem 0;">Probability density function of the shear stress</h3>
-            </article>
-          </div>
-
-          <h3 style="color: black; margin: 1rem 0 0.5rem 0;">References</h3>
-          <ul style="color: black;">
-            <li>B. V. Raghavan, P. Karimi, and M. Ostoja-Starzewski. <a href="https://www.sciencedirect.com/science/article/pii/S0378437117310798" target="_blank" rel="noopener noreferrer" style="color: #0000FF;">Stochastic characteristics and Second Law violations of atomic ﬂuids in Couette ﬂow</a>. <em>Physica A: Statistical Mechanics and its Applications</em>, 2018.</li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">&copy; All rights reserved.</p>
-      </footer>
+      </section>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      const nav = document.getElementById("nav");
-      // Restore scroll position on load
-      window.addEventListener("load", () => {
-        const scrollLeft = sessionStorage.getItem("navScrollLeft");
-        if (scrollLeft !== null) {
-          nav.scrollLeft = parseInt(scrollLeft, 10);
-        }
-      });
-      // Save scroll position before navigation
-      window.addEventListener("beforeunload", () => {
-        sessionStorage.setItem("navScrollLeft", nav.scrollLeft);
-      });
-    </script>
-    <script>
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("menu");
-      if (toggle && menu) {
-        toggle.addEventListener("click", () => {
-          menu.classList.toggle("show");
-        });
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; 2025 Pouyan Karimi. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    const nav = document.getElementById("nav");
+    window.addEventListener("load", () => {
+      const scrollLeft = sessionStorage.getItem("navScrollLeft");
+      if (scrollLeft !== null) {
+        nav.scrollLeft = parseInt(scrollLeft, 10);
       }
-    </script>
-  </body>
+    });
+    window.addEventListener("beforeunload", () => {
+      sessionStorage.setItem("navScrollLeft", nav.scrollLeft);
+    });
+  </script>
+</body>
 </html>
