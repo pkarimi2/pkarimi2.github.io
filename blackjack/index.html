@@ -23,6 +23,9 @@
     .hand {
       margin: 10px 0;
     }
+    #continueBtn {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -41,13 +44,159 @@
     <div class="hand">
       <h3>Dealer's Hand</h3>
       <div id="dealerHand"></div>
-      <p>Score: <span id="dealerScore">0</span></p>
+      <p>Score: <span id="dealerScore">?</span></p>
     </div>
     <button onclick="playerHit()">Hit</button>
     <button onclick="stand()">Stand</button>
   </div>
+  <button id="continueBtn" onclick="continueEndGame()">Continue</button>
   <p id="message"></p>
 
-  <script src="blackjack.js"></script>
+  <script>
+    window.onload = () => {
+      class Card {
+        constructor(suit, value) {
+          this.suit = suit;
+          this.value = value;
+        }
+
+        getDisplay() {
+          return `${this.value} of ${this.suit}`;
+        }
+      }
+
+      class Deck {
+        constructor() {
+          this.cards = [];
+          const suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades'];
+          for (const suit of suits) {
+            for (let value = 1; value <= 13; value++) {
+              const val = Math.min(value, 10);
+              this.cards.push(new Card(suit, val));
+            }
+          }
+          this.shuffle();
+        }
+
+        shuffle() {
+          for (let i = this.cards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [this.cards[i], this.cards[j]] = [this.cards[j], this.cards[i]];
+          }
+        }
+
+        draw() {
+          return this.cards.length > 0 ? this.cards.pop() : new Card("None", 0);
+        }
+      }
+
+      class Hand {
+        constructor() {
+          this.cards = [];
+          this.score = 0;
+        }
+
+        addCard(card) {
+          this.cards.push(card);
+          if (card.value === 1) {
+            this.score += (this.getScore() + 11 <= 21) ? 11 : 1;
+          } else {
+            this.score += card.value;
+          }
+        }
+
+        getScore() {
+          return this.score;
+        }
+
+        getDisplayHand(revealAll = true) {
+          if (revealAll) {
+            return this.cards.map(c => `${c.value} of ${c.suit}`).join(', ');
+          } else {
+            const hidden = this.cards.length > 1 ? ["??"] : [];
+            if (this.cards.length > 0) {
+              hidden.unshift(`${this.cards[0].value} of ${this.cards[0].suit}`);
+            }
+            return hidden.join(', ');
+          }
+        }
+      }
+
+      let player, dealer, deck, balance = 1000, currentBet, revealDealer = false, pendingMessage = "";
+
+      window.startGame = function () {
+        const betInput = document.getElementById('betInput');
+        currentBet = parseInt(betInput.value);
+        if (isNaN(currentBet) || currentBet <= 0 || currentBet > balance) {
+          alert('Invalid bet.');
+          return;
+        }
+
+        deck = new Deck();
+        player = new Hand();
+        dealer = new Hand();
+        balance -= currentBet;
+        revealDealer = false;
+        document.getElementById('balance').textContent = balance;
+
+        document.getElementById('gameArea').style.display = 'block';
+        document.getElementById('continueBtn').style.display = 'none';
+        document.getElementById('message').textContent = '';
+
+        player.addCard(deck.draw());
+        dealer.addCard(deck.draw());
+        player.addCard(deck.draw());
+        dealer.addCard(deck.draw());
+
+        updateDisplay();
+      }
+
+      window.playerHit = function () {
+        player.addCard(deck.draw());
+        updateDisplay();
+
+        if (player.getScore() > 21) {
+          revealDealer = true;
+          updateDisplay();
+          pendingMessage = 'Bust! Dealer wins.';
+          document.getElementById('continueBtn').style.display = 'inline-block';
+        }
+      }
+
+      window.stand = function () {
+        while (dealer.getScore() < 17) {
+          dealer.addCard(deck.draw());
+        }
+        revealDealer = true;
+        updateDisplay();
+
+        if (dealer.getScore() > 21 || player.getScore() > dealer.getScore()) {
+          balance += currentBet * 2;
+          pendingMessage = 'You win!';
+        } else if (dealer.getScore() > player.getScore()) {
+          pendingMessage = 'Dealer wins.';
+        } else {
+          balance += currentBet;
+          pendingMessage = "It's a draw.";
+        }
+
+        document.getElementById('continueBtn').style.display = 'inline-block';
+      }
+
+      window.continueEndGame = function () {
+        document.getElementById('continueBtn').style.display = 'none';
+        document.getElementById('message').textContent = pendingMessage;
+        document.getElementById('balance').textContent = balance;
+        document.getElementById('gameArea').style.display = 'none';
+      }
+
+      function updateDisplay() {
+        document.getElementById('playerHand').textContent = player.getDisplayHand();
+        document.getElementById('dealerHand').textContent = dealer.getDisplayHand(revealDealer);
+        document.getElementById('playerScore').textContent = player.getScore();
+        document.getElementById('dealerScore').textContent = revealDealer ? dealer.getScore() : '?';
+      }
+    };
+  </script>
 </body>
 </html>
