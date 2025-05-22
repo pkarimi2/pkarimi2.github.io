@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blackjack Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    #gameArea {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    .hand {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blackjack Game</h1>
+  <div>
+    <p>Balance: $<span id="balance">1000</span></p>
+    <input type="number" id="betInput" placeholder="Enter your bet" min="1" />
+    <button onclick="startGame()">Start Game</button>
+  </div>
+  <div id="gameArea" style="display: none;">
+    <div class="hand">
+      <h3>Your Hand</h3>
+      <div id="playerHand"></div>
+      <p>Score: <span id="playerScore">0</span></p>
+    </div>
+    <div class="hand">
+      <h3>Dealer's Hand</h3>
+      <div id="dealerHand"></div>
+      <p>Score: <span id="dealerScore">0</span></p>
+    </div>
+    <button onclick="playerHit()">Hit</button>
+    <button onclick="stand()">Stand</button>
+  </div>
+  <p id="message"></p>
+
+  <script src="blackjack.js"></script>
+</body>
+</html>
