@@ -62,16 +62,15 @@ window.onload = () => {
       return total;
     }
 
-    getCards() {
-      return this.cards;
-    }
-
-    getDisplayHand() {
+    getDisplayHand(hidden = false) {
+      if (hidden) {
+        return ["Hidden", ...this.cards.slice(1).map(c => `${c.value} of ${c.suit}`)].join(', ');
+      }
       return this.cards.map(c => `${c.value} of ${c.suit}`).join(', ');
     }
   }
 
-  let player, dealer, deck, balance = 1000, currentBet;
+  let player, dealer, deck, balance = 1000, currentBet, gameOver = false, hideDealerCard = true, wins = 0, losses = 0;
 
   window.startGame = function () {
     const betInput = document.getElementById('betInput');
@@ -88,7 +87,12 @@ window.onload = () => {
     document.getElementById('balance').textContent = balance;
 
     document.getElementById('gameArea').style.display = 'block';
+    document.getElementById('newGameButton').style.display = 'none';
     document.getElementById('message').textContent = '';
+    document.getElementById('hitButton').disabled = false;
+    document.getElementById('standButton').disabled = false;
+    hideDealerCard = true;
+    gameOver = false;
 
     player.addCard(deck.draw());
     dealer.addCard(deck.draw());
@@ -97,53 +101,124 @@ window.onload = () => {
 
     updateDisplay();
 
-    if (player.getScore() === 21) {
+    const score = player.getScore();
+    if (score === 21) {
       if (dealer.getScore() === 21) {
         balance += currentBet;
-        endGame("Both have Blackjack! It's a draw.");
+        pauseAndReveal(() => endGame("Both have Blackjack! It's a draw."));
       } else {
         balance += currentBet * 2.5;
-        endGame("Blackjack! You win.");
+        pauseAndReveal(() => endGame("Blackjack! You win."));
+        wins++;
       }
+    } else if (score > 21) {
+      pauseAndReveal(() => {
+        endGame('Bust on deal! Dealer wins.');
+        losses++;
+      });
     }
   }
 
   window.playerHit = function () {
-    player.addCard(deck.draw());
-    updateDisplay();
+    if (gameOver) return;
 
-    if (player.getScore() > 21) {
-      endGame('Bust! Dealer wins.');
+    player.addCard(deck.draw());
+    const score = player.getScore();
+    updateDisplay();
+    if (score > 21) {
+      pauseAndReveal(() => {
+        endGame('Bust! Dealer wins.');
+        losses++;
+      });
     }
   }
 
   window.stand = function () {
+    if (gameOver) return;
+    hideDealerCard = false;
     while (dealer.getScore() < 17) {
       dealer.addCard(deck.draw());
     }
     updateDisplay();
 
-    if (dealer.getScore() > 21 || player.getScore() > dealer.getScore()) {
-      balance += currentBet * 2;
-      endGame('You win!');
-    } else if (dealer.getScore() > player.getScore()) {
-      endGame('Dealer wins.');
-    } else {
-      balance += currentBet;
-      endGame("It's a draw.");
-    }
+    const playerScore = player.getScore();
+    const dealerScore = dealer.getScore();
+
+    pauseAndReveal(() => {
+      if (dealerScore > 21 || playerScore > dealerScore) {
+        balance += currentBet * 2;
+        endGame('You win!');
+        wins++;
+      } else if (dealerScore > playerScore) {
+        endGame('Dealer wins.');
+        losses++;
+      } else {
+        balance += currentBet;
+        endGame("It's a draw.");
+      }
+    });
   }
 
   function updateDisplay() {
     document.getElementById('playerHand').textContent = player.getDisplayHand();
-    document.getElementById('dealerHand').textContent = dealer.getDisplayHand();
+    document.getElementById('dealerHand').textContent = dealer.getDisplayHand(hideDealerCard);
     document.getElementById('playerScore').textContent = player.getScore();
-    document.getElementById('dealerScore').textContent = dealer.getScore();
+    document.getElementById('dealerScore').textContent = hideDealerCard ? '?' : dealer.getScore();
+    document.getElementById('winLoss').textContent = `Wins: ${wins} | Losses: ${losses}`;
   }
 
   function endGame(message) {
-    document.getElementById('message').textContent = message;
+    gameOver = true;
+    hideDealerCard = false;
+    updateDisplay();
+
+    const dealerInfo = ` (Dealer: ${dealer.getDisplayHand()} — ${dealer.getScore()})`;
+    const messageEl = document.getElementById('message');
+    
+    // Clear previous highlight
+    messageEl.className = '';
+
+    // Add styling based on outcome
+    if (message.toLowerCase().includes('win')) {
+      messageEl.classList.add('highlight-win');
+    } else if (message.toLowerCase().includes('lose')) {
+      messageEl.classList.add('highlight-lose');
+    } else {
+      messageEl.classList.add('highlight-draw');
+    }
+
+    messageEl.textContent = message + dealerInfo;
+
     document.getElementById('balance').textContent = balance;
+    document.getElementById('hitButton').disabled = true;
+    document.getElementById('standButton').disabled = true;
     document.getElementById('gameArea').style.display = 'none';
+    document.getElementById('newGameButton').style.display = 'inline-block';
+  }
+
+  window.newGame = function () {
+    document.getElementById('newGameButton').style.display = 'none';
+    startGame();
+  }
+
+  window.resetStats = function () {
+    wins = 0;
+    losses = 0;
+    balance = 1000;
+    document.getElementById('balance').textContent = balance;
+    document.getElementById('winLoss').textContent = 'Wins: 0 | Losses: 0';
+  }
+
+  window.pauseAndReveal = function (callback) {
+    const overlay = document.getElementById('overlay');
+    if (overlay) {
+      overlay.style.display = 'flex';
+      setTimeout(() => {
+        overlay.style.display = 'none';
+        callback();
+      }, 800);
+    } else {
+      callback();
+    }
   }
 };
