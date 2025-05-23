@@ -87,7 +87,6 @@ window.onload = () => {
     document.getElementById('balance').textContent = balance;
 
     document.getElementById('gameArea').style.display = 'block';
-    document.getElementById('newGameButton').style.display = 'none';
     document.getElementById('message').textContent = '';
     document.getElementById('hitButton').disabled = false;
     document.getElementById('standButton').disabled = false;
@@ -136,7 +135,6 @@ window.onload = () => {
   window.stand = function () {
     if (gameOver) return;
     hideDealerCard = false;
-    updateDisplay();
     while (dealer.getScore() < 17) {
       dealer.addCard(deck.draw());
     }
@@ -175,11 +173,9 @@ window.onload = () => {
 
     const dealerInfo = ` (Dealer: ${dealer.getDisplayHand()} — ${dealer.getScore()})`;
     const messageEl = document.getElementById('message');
-    
-    // Clear previous highlight
-    messageEl.className = '';
 
-    // Add styling based on outcome
+    // Highlight result
+    messageEl.className = '';
     if (message.toLowerCase().includes('win')) {
       messageEl.classList.add('highlight-win');
     } else if (message.toLowerCase().includes('lose')) {
@@ -193,13 +189,9 @@ window.onload = () => {
     document.getElementById('balance').textContent = balance;
     document.getElementById('hitButton').disabled = true;
     document.getElementById('standButton').disabled = true;
-    document.getElementById('gameArea').style.display = 'block';
-    document.getElementById('newGameButton').style.display = 'inline-block';
-  }
 
-  window.newGame = function () {
-    document.getElementById('newGameButton').style.display = 'none';
-    startGame();
+    // Change button label to New Round
+    document.getElementById('startGameButton').textContent = 'New Round';
   }
 
   window.resetStats = function () {
@@ -208,6 +200,7 @@ window.onload = () => {
     balance = 1000;
     document.getElementById('balance').textContent = balance;
     document.getElementById('winLoss').textContent = 'Wins: 0 | Losses: 0';
+    document.getElementById('startGameButton').textContent = 'Start Game';
   }
 
   window.pauseAndReveal = function (callback) {
@@ -217,7 +210,7 @@ window.onload = () => {
       setTimeout(() => {
         overlay.style.display = 'none';
         callback();
-      }, 400);
+      }, 800);
     } else {
       callback();
     }

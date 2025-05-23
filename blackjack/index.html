@@ -106,11 +106,10 @@
   <input id="betInput" type="number" min="1" placeholder="100" />
 
   <div>
-    <button onclick="startGame()">Start Game</button>
+    <button id="startGameButton" onclick="startGame()">Start Game</button>
     <button id="hitButton" onclick="playerHit()">Hit</button>
     <button id="standButton" onclick="stand()">Stand</button>
-    <button id="newGameButton" onclick="newGame()" style="display: none;">New Game</button>
-    <button onclick="resetStats()">Restart Balance</button>
+        <button onclick="resetStats()">Restart Balance</button>
   </div>
 
   <div id="gameArea" style="display: none;">
