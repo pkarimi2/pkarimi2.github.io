@@ -38,20 +38,28 @@ window.onload = () => {
   class Hand {
     constructor() {
       this.cards = [];
-      this.score = 0;
     }
 
     addCard(card) {
       this.cards.push(card);
-      if (card.value === 1) {
-        this.score += (this.getScore() + 11 <= 21) ? 11 : 1;
-      } else {
-        this.score += card.value;
-      }
     }
 
     getScore() {
-      return this.score;
+      let total = 0;
+      let aces = 0;
+      for (const card of this.cards) {
+        if (card.value === 1) {
+          aces++;
+          total += 11;
+        } else {
+          total += card.value;
+        }
+      }
+      while (total > 21 && aces > 0) {
+        total -= 10;
+        aces--;
+      }
+      return total;
     }
 
     getCards() {
@@ -88,6 +96,16 @@ window.onload = () => {
     dealer.addCard(deck.draw());
 
     updateDisplay();
+
+    if (player.getScore() === 21) {
+      if (dealer.getScore() === 21) {
+        balance += currentBet;
+        endGame("Both have Blackjack! It's a draw.");
+      } else {
+        balance += currentBet * 2.5;
+        endGame("Blackjack! You win.");
+      }
+    }
   }
 
   window.playerHit = function () {
