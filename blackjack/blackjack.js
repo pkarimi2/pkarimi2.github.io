@@ -136,6 +136,7 @@ window.onload = () => {
   window.stand = function () {
     if (gameOver) return;
     hideDealerCard = false;
+    updateDisplay();
     while (dealer.getScore() < 17) {
       dealer.addCard(deck.draw());
     }
@@ -192,7 +193,7 @@ window.onload = () => {
     document.getElementById('balance').textContent = balance;
     document.getElementById('hitButton').disabled = true;
     document.getElementById('standButton').disabled = true;
-    document.getElementById('gameArea').style.display = 'none';
+    document.getElementById('gameArea').style.display = 'block';
     document.getElementById('newGameButton').style.display = 'inline-block';
   }
 
@@ -216,7 +217,7 @@ window.onload = () => {
       setTimeout(() => {
         overlay.style.display = 'none';
         callback();
-      }, 800);
+      }, 400);
     } else {
       callback();
     }
